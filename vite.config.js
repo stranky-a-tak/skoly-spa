@@ -11,7 +11,7 @@ export default defineConfig({
     },
     proxy: {
       "/api": {
-        target: "http://php:9000",
+        target: "http://api:9000",
         changeOrigin: true,
         secure: false,
         ws: true,
