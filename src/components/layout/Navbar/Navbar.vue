@@ -15,7 +15,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Navbar",
   computed: {
@@ -25,8 +24,8 @@ export default {
   },
   methods: {
     logout() {
-      store.dispatch('logout')
-    }
+      this.$store.dispatch("logout");
+    },
   },
 };
 </script>

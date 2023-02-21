@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export default {
   // namespaced: true,
   state() {
@@ -12,7 +14,7 @@ export default {
     setUser: ({ commit }, user) => commit("SET_USER", user),
     async logout() {
       try {
-        axios.post(`/logout`)
+        axios.post(`/api/logout`)
       } catch (e) {
         console.log(e);
       }
